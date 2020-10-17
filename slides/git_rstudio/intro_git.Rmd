@@ -28,6 +28,9 @@ class: middle, center, inverse
 # O que é Git/GitHub e por que usá-los?
 
 ---
+class: hide-logo
+
+
 # Git é uma ferramenta de controle de versão de arquivos
 
 - Um sistema de controle de arquivos nada mais é do que um sistema que registra alterações em um arquivo ou conjunto de arquivos ao longo do tempo para que você possa recuperar versões específicas posteriormente.
@@ -35,6 +38,8 @@ class: middle, center, inverse
 -  Ele permite que você reverta os arquivos para um estado anterior, reverta todo o projeto para um estado anterior, analise as alterações feitas ao longo do tempo, veja quem modificou pela última vez algo que pode estar causando um problema, quem introduziu um problema nos seus arquivos/códigos e muito mais!
 
 ---
+class: hide-logo
+
 # Se o git é o coração do Git o hub do GitHub é a alma!
 
 - GitHub é a principal rede social dos desenvolvedores e onde podemos compartilhar tudo o que versionamos usando o git.
@@ -43,6 +48,8 @@ class: middle, center, inverse
 
 
 ---
+class: hide-logo
+
 # Fluxo de trabalho e conceitos-chave
 
 - Repositório: (ou só repo) é uma coleção de arquivos (geralmente de códigos)
@@ -61,7 +68,9 @@ knitr::include_graphics("./img/prints/diagrama_git.png")
 ```
 
 ---
-# Um arquivo do seu working directory pode assumir 3 estados possíveis:
+class: hide-logo
+
+### Um arquivo do seu working directory pode assumir 3 estados possíveis:
 
 - Ele pode ser alterado: ou seja, os arquivos com as mudanças atualizadas ainda não estão armazenados no repositório local.
 
@@ -71,34 +80,49 @@ knitr::include_graphics("./img/prints/diagrama_git.png")
 
 
 ---
+#### Ciclo de comandos básicos (parte 1)
 
-## Comentários 
+- `git config --global user.name "YOUR_USERNAME" `
 
-- Você pode usar o Git através:
-  -  __Linha de comando__ :
-      - [git](https://git-scm.com/)
-      - terminal do RStudio
-  - __Interfaces gráficas__:
-      - [GitHub Desktop](https://desktop.github.com/)
-      - [Sourcetree](https://www.sourcetreeapp.com/)
-      - Git Pane do RStudio
-      - Entre outros!
-    
-Logo apresentaremos como utilizar através do RStudio, mas escolha o que é mais confortável para você :)
+- `git config --global user.email "bruna@rladies.com"`
 
-- Independente de qual ferramenta você escolher, é importante qual comando do Git equivale a um "botão" na interface gráfica. É muito importante entender as equivalências!
+- `git config --global --list` # To check the info you just provided
 
+- Adicionar chave SSH e criar um arquivo README.md (logo mais)
+
+- `git status` #lista todos arquivos presentes no seu repositório
+
+---
+#### Ciclo de comandos básicos (parte 2)
+
+- `git add <your_file>` #add um ou mais arquivos p/ área de stagging
+
+- `git commit -m "First commit"` #commita arquivos da área de stagging
+
+- Cria repo remoto na sua conta do GitHub (copie o endereço dela)
+
+- `git remote add origin remote_repo_URL` #linka local e remote repos
+
+- `git push -u origin master` #manda arquivos commitados p/ repo remoto
 
 
 ---
-class: center, middle 
+class: hide-logo
 
-## Linha de comando ou interface gráfica?
-## Use o que for melhor para **você**!
+# Comandos que nos ajudar neste 1º ciclo
 
-```{r out.width="50%"}
-knitr::include_graphics("https://media0.giphy.com/media/dNgK7Ws7y176U/giphy.gif")
-```
+- `git diff` #mostra alterações não commitadas 
+
+- `git checkout file_name` #reverte último commit
+
+- `git log` #historico de commits
+
+- `git reset HEAD SSH_key`
+
+- `git branch outra_versao` # cria uma segunda versão do seu projeto para termos duas versões de um mesmo arquivo.
+
+- `git clone remote_repository_URL` #copia o conteúdo de um remote repo para nossa máquina
+
 
 ---
 ## Branch
@@ -186,13 +210,43 @@ knitr::include_graphics("https://media.giphy.com/media/l4FGJfimoW3Cl6gDK/giphy.g
 
 
 ---
-class: center
+class: center, middle
 
 ## Dicas
 
-[GIT CHEAT SHEET](https://education.github.com/git-cheat-sheet-education.pdf)
+.center[[GIT CHEAT SHEET](https://education.github.com/git-cheat-sheet-education.pdf)]
 
 ```{r echo=FALSE, fig.align='center', out.width="40%"}
 knitr::include_graphics("img/zine.png")
 ```
 
+
+---
+
+## Comentários 
+
+- Você pode usar o Git através:
+  -  __Linha de comando__ :
+      - [git](https://git-scm.com/)
+      - terminal do RStudio
+  - __Interfaces gráficas__:
+      - [GitHub Desktop](https://desktop.github.com/)
+      - [Sourcetree](https://www.sourcetreeapp.com/)
+      - Git Pane do RStudio
+      - Entre outros!
+    
+Logo apresentaremos como utilizar através do RStudio, mas escolha o que é mais confortável para você :)
+
+- Independente de qual ferramenta você escolher, é importante qual comando do Git equivale a um "botão" na interface gráfica. É muito importante entender as equivalências!
+
+
+
+---
+class: center, middle 
+
+## Linha de comando ou interface gráfica?
+## Use o que for melhor para **você**!
+
+```{r out.width="50%"}
+knitr::include_graphics("https://media0.giphy.com/media/dNgK7Ws7y176U/giphy.gif")
+```
