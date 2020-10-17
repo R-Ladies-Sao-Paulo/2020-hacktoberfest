@@ -25,7 +25,10 @@ class: middle, center, inverse
 
 ```
 
-# O que é Git/GitHub e por que usá-los?
+```{r out.width="60%"}
+knitr::include_graphics("https://pics.me.me/soy-una-orca-quenormaltodo-esta-camiseta-me-representa-trabajo-final-docx-38350746.png")
+```
+
 
 ---
 class: hide-logo
