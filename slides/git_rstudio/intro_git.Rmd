@@ -120,7 +120,7 @@ class: hide-logo
 
 - `git log` #historico de commits
 
-- `git reset HEAD SSH_key`
+- `git reset HEAD SHA_key`
 
 - `git branch outra_versao` # cria uma segunda versão do seu projeto para termos duas versões de um mesmo arquivo.
 
