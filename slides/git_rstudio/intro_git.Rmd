@@ -233,6 +233,7 @@ knitr::include_graphics("img/zine.png")
       - [git](https://git-scm.com/)
       - terminal do RStudio
   - __Interfaces gráficas__:
+      - [Git Kraken](https://www.gitkraken.com/git-client)
       - [GitHub Desktop](https://desktop.github.com/)
       - [Sourcetree](https://www.sourcetreeapp.com/)
       - Git Pane do RStudio
