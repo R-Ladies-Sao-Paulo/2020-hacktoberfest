@@ -68,6 +68,12 @@ install.packages("usethis")
 
 - [Documentação do GitHub](https://docs.github.com/pt)
 
+- [Sobre armazenamento de arquivos grandes no GitHub](https://docs.github.com/pt/free-pro-team@latest/github/managing-large-files/about-git-large-file-storage)
+
+- [Sobre a cobrança de pacotes do GitHub](https://docs.github.com/pt/free-pro-team@latest/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-packages)
+
+
+
 ### Em Inglês
 
 - [Palestra](https://youtu.be/ZCeBnQBQ1h8) (em inglês) da [Jenny Bryan](https://jennybryan.org/) sobre o pacote `usethis`.
@@ -77,10 +83,6 @@ install.packages("usethis")
 - Documentação do pacote [usethis](https://usethis.r-lib.org/reference/create_package.html)
 
 - [RStudio Cheatsheet](https://www.rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf)
-
-- [Sobre armazenamento de arquivos grandes no GitHub](https://docs.github.com/pt/free-pro-team@latest/github/managing-large-files/about-git-large-file-storage)
-
-- [Sobre a cobrança de pacotes do GitHub](https://docs.github.com/pt/free-pro-team@latest/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-packages)
 
 
 ## Contribuindo com as apresentações
