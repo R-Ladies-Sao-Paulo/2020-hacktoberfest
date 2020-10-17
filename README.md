@@ -63,6 +63,11 @@ install.packages("usethis")
 
 - Livro [Zen do R](https://curso-r.github.io/zen-do-r/git-github.html), da [Curso-R](https://www.curso-r.com/), escrito por [Caio Lente](https://lente.dev/)
 
+
+-Post [Abandonando o Termo 'master' no GitHub](https://www.curso-r.com/blog/2020-07-27-github-main-branch/), da [Curso-R](https://www.curso-r.com/), escrito por [Caio Lente](https://lente.dev/)
+
+- [Documentação do GitHub](https://docs.github.com/pt)
+
 ### Em Inglês
 
 - [Palestra](https://youtu.be/ZCeBnQBQ1h8) (em inglês) da [Jenny Bryan](https://jennybryan.org/) sobre o pacote `usethis`.
@@ -72,6 +77,11 @@ install.packages("usethis")
 - Documentação do pacote [usethis](https://usethis.r-lib.org/reference/create_package.html)
 
 - [RStudio Cheatsheet](https://www.rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf)
+
+- [Sobre armazenamento de arquivos grandes no GitHub](https://docs.github.com/pt/free-pro-team@latest/github/managing-large-files/about-git-large-file-storage)
+
+- [Sobre a cobrança de pacotes do GitHub](https://docs.github.com/pt/free-pro-team@latest/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-packages)
+
 
 ## Contribuindo com as apresentações
 
