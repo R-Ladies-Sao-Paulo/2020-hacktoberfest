@@ -27,6 +27,8 @@ install.packages("usethis")
 
 - [Lista de repositórios sugeridos para participar durante este workshop](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/projetos.html).
 
+- [Código utilizado no sorteio](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/sorteio.R)
+
 
 ## Slides
 
