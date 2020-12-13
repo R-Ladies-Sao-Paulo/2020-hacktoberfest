@@ -6,7 +6,7 @@ Todas as pessoas participantes devem seguir o [código de conduta da R-Ladies](h
 
 ## Gravações do evento
 
-- Os vídeos das apresentações feitas neste evento estão [nesta playlist no YouTube](http.s://youtube.com/playlist?list=PLufjVrrUAoSdny-WECY4Gr2pn5OQGG_FN).
+- Os vídeos das apresentações feitas neste evento estão [nesta playlist no YouTube](https://youtube.com/playlist?list=PLufjVrrUAoSdny-WECY4Gr2pn5OQGG_FN).
 
 ## Pré-requisitos:
 
