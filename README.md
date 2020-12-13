@@ -4,6 +4,10 @@
 
 Todas as pessoas participantes devem seguir o [código de conduta da R-Ladies](https://github.com/rladies/.github/blob/master/CODE_OF_CONDUCT.md#Portuguese).
 
+## Gravações do evento
+
+- Os vídeos das apresentações feitas neste evento estão [nesta playlist no YouTube](http.s://youtube.com/playlist?list=PLufjVrrUAoSdny-WECY4Gr2pn5OQGG_FN).
+
 ## Pré-requisitos:
 
 - R, faça o download da versão mais recente [neste link](https://cran.r-project.org/).
