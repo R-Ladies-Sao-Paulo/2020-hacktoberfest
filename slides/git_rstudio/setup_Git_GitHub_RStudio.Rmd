@@ -312,7 +312,7 @@ usethis::git_sitrep()
 # • Default Git protocol: 'https'
 # GitHub
 # • Default GitHub host: 'https://github.com'
-# • Personal access token for 'https://github.com': '<discovered>'
+{{# • Personal access token for 'https://github.com': '<discovered>' }}
 # • GitHub user: 'SEU USUARIO NO GITHUB AQUI'
 # • Token scopes: 'gist, repo, user, workflow'
 # • Email(s): 'SEUS EMAILS AQUI'
