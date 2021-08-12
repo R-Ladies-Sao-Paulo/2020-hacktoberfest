@@ -3,26 +3,8 @@
   <head>
     <title>Configurando o Git e GitHub no RStudio</title>
     <meta charset="utf-8" />
-    <meta name="author" content="R-Ladies São Paulo" />
-    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
-    <script src="libs/tile-view/tile-view.js"></script>
-    <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
-    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"eaae8524f08a4c6e93491ec3ea85b24d","expires":1}</script>
-    <script src="libs/himalaya/himalaya.js"></script>
-    <script src="libs/js-cookie/js.cookie.js"></script>
-    <link href="libs/editable/editable.css" rel="stylesheet" />
-    <script src="libs/editable/editable.js"></script>
-    <script src="libs/clipboard/clipboard.min.js"></script>
-    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
-    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
-    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
-    <script src="libs/xaringanExtra_fit-screen/fit-screen.js"></script>
-    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
-    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
-    <script src="libs/shareon/shareon.min.js"></script>
-    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
-    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <meta name="author" content="R-Ladies São Paulo  https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -31,8 +13,8 @@
 class: center, middle, inverse, title-slide
 
 # Configurando o Git e GitHub no RStudio
-### R-Ladies São Paulo
-### Atualizado em 15/10/2020
+### R-Ladies São Paulo <BR> <a href="https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/" class="uri">https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/</a>
+### Atualizado em 12/08/2021
 
 ---
 
@@ -64,7 +46,7 @@ top:1em;right:1em;
         setTimeout(addLogo, 100)
       }
     } else {
-      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+      document.querySelectorAll('.remark-slide-content:not(.hide-logo)')
         .forEach(function (slide) {
           const logo = document.createElement('a')
           logo.classList = 'xaringan-extra-logo'
@@ -297,19 +279,20 @@ class: middle
 
 
 ```r
-usethis::browse_github_token()
-# ✔ Opening URL 'https://github.com/settings/tokens/new?scopes=repo,gist&amp;description=R:GITHUB_PAT'
-# ● Call `usethis::edit_r_environ()` to open '.Renviron'.
-# ● Store your PAT with a line like:
-*#   GITHUB_PAT=xxxyyyzzz
-#   [Copied to clipboard]
-# ● Make sure '.Renviron' ends with a newline!
+usethis::create_github_token()
 ```
 
-- Uma página do GitHub irá abrir, com as configurações necessárias. Você pode alterar o nome do token, para saber em qual computador está vinculando. Crie o novo token.
+- Uma página do GitHub irá abrir, com as configurações necessárias. Você pode alterar o nome do token, para saber em qual computador está vinculando. Também é possível mudar o tempo de expiração do token. Crie o novo token.
+
+
+Atenção: antes a função era chamada `browse_github_token()` e foi alterada para `create_github_token()`.
 
 ---
 class: middle  
+
+
+
+Atenção: antes a função era chamada `browse_github_token()` e foi alterada para `create_github_token()`.
 
 - Exemplo:
 
@@ -340,6 +323,30 @@ usethis::edit_r_environ()
 &lt;img src="img/prints/githubpath.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 - **Reinicie o RStudio**:  CTRL + SHIFT + F10
+
+
+---
+
+- Verifique se foi configurado corretamente com a função `git_setrep()` (git situation report):
+
+
+```r
+usethis::git_sitrep()
+# Git config (global)
+# • Name: 'SEU NOME AQUI'
+# • Email: 'SEU EMAIL USADO NO GITHUB AQUI'
+# • Vaccinated: FALSE
+# ℹ See `?git_vaccinate` to learn more
+# ℹ Defaulting to 'https' Git protocol
+# • Default Git protocol: 'https'
+# GitHub
+# • Default GitHub host: 'https://github.com'
+# • Personal access token for 'https://github.com': '&lt;discovered&gt;'
+# • GitHub user: 'SEU USUARIO NO GITHUB AQUI'
+# • Token scopes: 'gist, repo, user, workflow'
+# • Email(s): 'SEUS EMAILS AQUI'
+```
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="libs/remark-latest.min.js"></script>

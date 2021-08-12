@@ -1,6 +1,6 @@
 ---
 title: "Configurando o Git e GitHub no RStudio"
-author: "R-Ladies São Paulo"
+author: "R-Ladies São Paulo <BR> https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/"
 encoding: "UTF-8"
 date: "Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`"
 output:
@@ -246,19 +246,20 @@ class: middle
 - Criar um novo token no GitHub:
 
 ```{r echo=TRUE, eval=FALSE}
-usethis::browse_github_token()
-# ✔ Opening URL 'https://github.com/settings/tokens/new?scopes=repo,gist&description=R:GITHUB_PAT'
-# ● Call `usethis::edit_r_environ()` to open '.Renviron'.
-# ● Store your PAT with a line like:
-{{#   GITHUB_PAT=xxxyyyzzz}}
-#   [Copied to clipboard]
-# ● Make sure '.Renviron' ends with a newline!
+usethis::create_github_token()
 ```
 
-- Uma página do GitHub irá abrir, com as configurações necessárias. Você pode alterar o nome do token, para saber em qual computador está vinculando. Crie o novo token.
+- Uma página do GitHub irá abrir, com as configurações necessárias. Você pode alterar o nome do token, para saber em qual computador está vinculando. Também é possível mudar o tempo de expiração do token. Crie o novo token.
+
+
+Atenção: antes a função era chamada `browse_github_token()` e foi alterada para `create_github_token()`.
 
 ---
 class: middle  
+
+
+
+Atenção: antes a função era chamada `browse_github_token()` e foi alterada para `create_github_token()`.
 
 - Exemplo:
 
@@ -294,3 +295,26 @@ knitr::include_graphics("img/prints/githubpath.png")
 ```
 
 - **Reinicie o RStudio**:  CTRL + SHIFT + F10
+
+
+---
+
+- Verifique se foi configurado corretamente com a função `git_setrep()` (git situation report):
+
+```{r echo=TRUE, eval=FALSE}
+usethis::git_sitrep()
+# Git config (global)
+# • Name: 'SEU NOME AQUI'
+# • Email: 'SEU EMAIL USADO NO GITHUB AQUI'
+# • Vaccinated: FALSE
+# ℹ See `?git_vaccinate` to learn more
+# ℹ Defaulting to 'https' Git protocol
+# • Default Git protocol: 'https'
+# GitHub
+# • Default GitHub host: 'https://github.com'
+# • Personal access token for 'https://github.com': '<discovered>'
+# • GitHub user: 'SEU USUARIO NO GITHUB AQUI'
+# • Token scopes: 'gist, repo, user, workflow'
+# • Email(s): 'SEUS EMAILS AQUI'
+```
+
