@@ -23,11 +23,6 @@ library(xaringanthemer)
 # 
 # xaringanExtra::use_editable(expires = 1)
 
-xaringanExtra::use_logo(
-  image_url = "img/rainbow-inclusive.png",
-  link_url = "https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil",
-  exclude_class = "hide-logo"
-)
 
 # xaringanExtra::use_clipboard()
 # 
